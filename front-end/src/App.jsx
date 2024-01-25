@@ -1,13 +1,14 @@
-import './App.css'
+import React from 'react'
+import WebCamComponent from './components/WebCamComponent';
 
-function App() {
- 
 
+const App = () => {
   return (
     <>
-      
+      <h1 className="text-4xl font-bold">Gaze Tracking App</h1>
+      <WebCamComponent/>
     </>
   )
 }
 
-export default App
+export default App;
