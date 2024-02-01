@@ -17,14 +17,14 @@ document.addEventListener('DOMContentLoaded', function() {
 		const scrollStep = 10;
 	
 		if (yprediction < 50) {
-			// Scroll up
+			// for scrolling up 
 			$(window).scrollTop($(window).scrollTop() - scrollStep);
 		}
 	
 		const windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 	
 		if (yprediction > (windowHeight - 50)) {
-			// Scroll down
+			// for scrolling down
 			$(window).scrollTop($(window).scrollTop() + scrollStep);
 		}
 	}).begin();
